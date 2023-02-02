@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Logo from '../assets/logo.png'
 import Contact from './Contact'
-import Button from './ui/button'
 import Icons from './Icons'
 
 export default function Footer() {

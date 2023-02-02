@@ -1,9 +1,6 @@
 import Image from 'next/image'
-import Logo from '../assets/logo.png'
-import Contact from './Contact'
 import bg2 from '../assets/bg2.png'
 import Button from './ui/button'
-import Icons from './icons'
 
 export default function About() {
     return (
