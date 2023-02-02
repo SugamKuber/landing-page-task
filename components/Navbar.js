@@ -10,7 +10,7 @@ export default function Navbar() {
                 <Image src={Logo} alt="logo" width={200} height={100} className="mt-5" />
                 <div className='hidden md:flex md:items-center md:mt-5'>
                     <Contact />
-                    <div>
+                    <div className='md:ml-5'>
                         <Button>Download the app</Button >
                     </div>
                 </div>
