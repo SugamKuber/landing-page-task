@@ -6,12 +6,12 @@ import Button from './ui/button'
 export default function Navbar() {
     return (
         <>
-            <div className='flex justify-between px-10'>
-                <Image src={Logo} alt="logo" width={100} height={50} />
-                <div className='flex '>
+            <div className='flex justify-between px-6 mb-10'>
+                <Image src={Logo} alt="logo" width={200} height={100} className="mt-5" />
+                <div className='hidden md:flex md:items-center md:mt-5'>
                     <Contact />
                     <div>
-                        <Button>  Download the app</Button >
+                        <Button>Download the app</Button >
                     </div>
                 </div>
             </div>

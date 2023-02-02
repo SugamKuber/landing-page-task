@@ -7,7 +7,7 @@ import Linkedin from '../assets/linkedin.svg'
 export default function Icons() {
     return (
         <>
-            <div >
+            <div className='flex gap-x-4'>
                 <div>
                     <Image src={Twitter} width={30} height={30} alt="icons" />
                 </div>

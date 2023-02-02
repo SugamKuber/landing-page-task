@@ -28,19 +28,19 @@ export default function Form() {
     })
     return (
         <div>
-            <form onSubmit={formik.handleSubmit}>
-                <div>
-                    <input type="name" name="name" id="name" placeholder='name'
+            <form onSubmit={formik.handleSubmit} className='flex justify-center'>
+                <div className='flex flex-col w-4/5 gap-y-4'>
+                    <input className='bg-black border-2 border-slate-600 rounded-full py-3 text-center' type="name" name="name" id="name" placeholder='enter your name'
                         onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.name} />
                     {formik.touched.name && formik.errors.name && (
                         <span>{formik.errors.name}</span>
                     )}
-                    <input type="email" name="email" id="email" placeholder='email'
+                    <input className='bg-black border-2  border-slate-600 rounded-full py-3 text-center' type="email" name="email" id="email" placeholder='enter your email'
                         onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} />
                     {formik.touched.email && formik.errors.email && (
                         <span>{formik.errors.email}</span>
                     )}
-                    <button type='submit'>Submit</button>
+                    <button className='bg-black border-2 border-slate-600 rounded-3xl py-3 ' type='submit'>Submit</button>
                 </div>
             </form>
         </div>
