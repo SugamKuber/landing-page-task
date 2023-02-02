@@ -8,7 +8,8 @@ datasource db {
 }
 
 model Form {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
-  email     String
-  name      String
+  id    String   @id @default(auto()) @map("_id") @db.ObjectId
+  email String
+  name  String
+  time  DateTime @default(now())
 }
